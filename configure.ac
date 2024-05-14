@@ -351,6 +351,7 @@ _MY_CXX_CHECK_OPT(CFG_CXXFLAGS_WEXTRA,-Wthread-safety)
 AC_SUBST(CFG_CXXFLAGS_WEXTRA)
 
 # Flags for coroutine support for dynamic scheduling
+_MY_CXX_CHECK_SET(CFG_CXXFLAGS_COROUTINES,-std=c++20) 
 _MY_CXX_CHECK_SET(CFG_CXXFLAGS_COROUTINES,-fcoroutines-ts)
 _MY_CXX_CHECK_SET(CFG_CXXFLAGS_COROUTINES,-fcoroutines)
 _MY_CXX_CHECK_SET(CFG_CXXFLAGS_COROUTINES,-fcoroutines-ts -Wno-deprecated-experimental-coroutine)
